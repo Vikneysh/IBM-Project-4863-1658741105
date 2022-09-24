@@ -14,5 +14,13 @@ They should login to the app and update the containment zones locations in the p
  
 ## User App (Mobile App):
 The app should have a user registration and login.  After the user logged into the app it will  track the user's location and update the database with the current location.  If the user is visiting the containment zone he will get an alert notification.
- 
+
+## Ideation Phase
+..* [Literature Survey](https://github.com/Vikneysh/IBM-Project-4863-1658741105/blob/main/Ideation%20Phase/Literature%20Survey/Containment%20Zone%20Alerting%20Application%20-%20Literature%20Survey.pdf)
+
+..* [Empathy Map](https://github.com/Vikneysh/IBM-Project-4863-1658741105/blob/main/Ideation%20Phase/Empathy%20Map/Containment%20Zone%20Alerting%20Application%20-%20Empathy%20Map.pdf)
+
+..* [Ideation](https://github.com/Vikneysh/IBM-Project-4863-1658741105/blob/main/Ideation%20Phase/Ideation/Containment%20Zone%20Alerting%20Application%20-%20Ideation.pdf)
+
+
  
