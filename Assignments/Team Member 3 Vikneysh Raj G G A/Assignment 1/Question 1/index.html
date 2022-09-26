@@ -1,0 +1,89 @@
+<html>
+    <head>	
+        <title>Form Validation</title>
+        <style>body
+        {
+        background-color:#1f2833;
+        }
+        .field_set{
+        border: 5px white solid;
+        }
+        legend{
+        color:#45929e;
+        }	
+        input,select
+        {
+        margin-left:20px;		
+        }
+        div
+        {
+        margin-left:530px;
+        }
+        td{
+            color:white;
+        }
+        .button{
+        background-color:#45929e; width:80pt; height:30pt; color:white;
+        transition-duration: 0.4s;
+        border-radius: 4px 10px;
+        border: 2px solid;
+        }
+        .button:hover{
+        background-color:white;
+        color:#45929e;
+        }
+        .number{
+        height: 25px;
+        width: 190px;
+        border-radius: 3px 6px;
+        border: 1px solid #66fcf1;
+        text-align:center;
+        }
+        </style>
+
+    </head>
+    <body>
+        <font face="Candara" color="white">
+            <form name='login' method="POST" action="home.html" autocomplete="on">
+                <fieldset class=field_set>
+                    <legend><h1>Registration Form</h1></legend>
+                    <center>
+                        <table height="200">
+                            <tr>
+                                <td>USERNAME:</td>
+                                <td><input type="text" id="id" name="id" maxlength="12" class=number placeholder="min. 5 char." minlength=5 required autofocus ></td>
+                            </tr>
+                            <tr>
+                                <td>EMAIL:</td>
+                                <td><input type="email" id="email" name="email" class=number placeholder="email address" required autofocus ></td>
+                            </tr>
+                            <tr>
+                                <td>PHONE NUMBER:</td>
+                                <td><input type="text" id="phoneNumber" name="phoneNumber" maxlength="10" class=number placeholder="10 digit mobile num" minlength=10 required autofocus ></td>
+                            </tr>
+                            <tr>
+                                <td>PASSWORD:</td>
+                                <td><input type="password" name="passwd" class=number placeholder="min. 8 char." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required></td>
+                            </tr>
+                        </table>
+                        <br><button class=button onclick="sendData()">SUBMIT</button><br><br><hr>&copy 201906055 Vikneysh Raj G G A <hr></fieldset>		
+                    </center>
+            </form> 
+            <script>
+                function sendData() {
+                    var userName = document.getElementById('username').value;
+                    var email = document.getElementById('email').value;
+                    var phoneNumber = document.getElementById('phoneNumber').value;
+                
+                    sessionStorage.setItem('NAME', userName);
+                    sessionStorage.setItem('EMAIL', email);
+                    sessionStorage.setItem('PHONE', phoneNumber);
+                    sessionStorage.hasOwnProperty('NAME');
+                    console.log(sessionStorage.hasOwnProperty('NAME'));
+                    return;
+                }
+            </script>
+    </body>
+</html>
+
+

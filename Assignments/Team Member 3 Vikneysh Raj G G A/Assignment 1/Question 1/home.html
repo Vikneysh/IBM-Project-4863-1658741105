@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Form Validation</title>
+    <style>
+      body {
+        color: white;
+        background-color: #1f2833;
+      }
+      .field_set {
+        border: 5px white solid;
+      }
+      legend {
+        color: #45929e;
+      }
+      span {
+        color: orange;
+      }
+      input,
+      select {
+        margin-left: 20px;
+      }
+      div {
+        margin-left: 530px;
+      }
+      td {
+        color: white;
+      }
+      .button {
+        background-color: #45929e;
+        width: 80pt;
+        height: 30pt;
+        color: white;
+        transition-duration: 0.4s;
+        border-radius: 4px 10px;
+        border: 2px solid;
+      }
+      .button:hover {
+        background-color: white;
+        color: #45929e;
+      }
+      .number {
+        height: 25px;
+        width: 190px;
+        border-radius: 3px 6px;
+        border: 1px solid #66fcf1;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    Welcome, <span id="name"></span> <br /><br />
+    Email: <span id="mail"></span> <br /><br />Phone: <span id="phone"></span>
+    <script>
+      window.onload = (event) => {
+        document.getElementById("name").innerHTML =
+          sessionStorage.getItem("USER");
+        document.getElementById("mail").innerHTML =
+          sessionStorage.getItem("EMAIL");
+        document.getElementById("phone").innerHTML =
+          sessionStorage.getItem("PHONE");
+        console.log(sessionStorage.getItem("NAME"));
+      };
+    </script>
+  </body>
+</html>
