@@ -1,7 +1,8 @@
 # IBM-Project-4863-1658741105
-Containment zone Alerting Application
-PROJECT DESCRIPTION
-Project Idea:
+<img src="https://github.com/Vikneysh/Vikneysh-Assets/blob/main/PRIEE/PRIEE.png">
+
+# PROJECT DESCRIPTION
+## Project Idea:
 This application is intended to provide information about containment zones in a particular region by alerting people, through continuous monitoring of an individual's location.  Key benefits of the application are monitoring people's activity and alerting them of their safety movements.
  
 ## Solution Requirement:
