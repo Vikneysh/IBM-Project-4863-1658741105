@@ -43,5 +43,7 @@ The app should have a user registration and login.  After the user logged into t
 
 * [Data Flow Diagram & User Stories](https://github.com/Vikneysh/IBM-Project-4863-1658741105/blob/main/Pre-Development/Project%20Design%20Phase%20II/Data%20Flow%20Diagram%20%26%20User%20Stories.pdf)
 
-
-
+## Project Planning Phase
+* [Milestone & Activity List]()
+ 
+* [Sprint Delivery Plan]()
