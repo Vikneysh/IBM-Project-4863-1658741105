@@ -37,5 +37,13 @@ The app should have a user registration and login.  After the user logged into t
 ## Project Design Phase II
 * [Customer Journey Map](https://github.com/IBM-EPBL/IBM-Project-4863-1658741105/blob/main/Pre-Development/Project%20Design%20Phase%20II/Customer%20Journey%20Map.pdf)
 
-* [Technical Architecture](https://github.com/IBM-EPBL/IBM-Project-4863-1658741105/blob/main/Pre-Development/Project%20Design%20Phase%20II/Technical%20Architecture.pdf)
+* [Technology Architecture](https://github.com/Vikneysh/IBM-Project-4863-1658741105/blob/main/Pre-Development/Project%20Design%20Phase%20II/Technology%20Architecture.pdf)
 
+* [Solution Requirements](https://github.com/Vikneysh/IBM-Project-4863-1658741105/blob/main/Pre-Development/Project%20Design%20Phase%20II/Solution%20Requirements.pdf)
+
+* [Data Flow Diagram & User Stories](https://github.com/Vikneysh/IBM-Project-4863-1658741105/blob/main/Pre-Development/Project%20Design%20Phase%20II/Data%20Flow%20Diagram%20%26%20User%20Stories.pdf)
+
+## Project Planning Phase
+* [Milestone & Activity List]()
+ 
+* [Sprint Delivery Plan]()
