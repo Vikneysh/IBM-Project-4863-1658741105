@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}"> -->
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Containment Zone Alert System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/zones">Containment Zones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/logout">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <footer>
+    <div class="container-fluid text-center"
+      style="background-color: #b8cfe1; height: 520px; width: 450px; border-radius: 10px;">
+      <br /><br />
+      <div class="form-group" align="center">
+        <form method="post" autocomplete="on" action="/newUser">
+          <p class="h4" style="color: #ff4c29"><b>ADD USER</b></p>
+          <br />
+          <input id="UserName" type="text" name="UserName" class="form-control" placeholder="UserName"
+            style="width: 75%" /><br />
+          <input id="EmailAddress" type="text" name="EmailAddress" class="form-control" placeholder="Email Address"
+            style="width: 75%" /><br />
+          <input id="PhoneNumber" type="tel" name="PhoneNumber" class="form-control" placeholder="Phone Number"
+            style="width: 75%" /><br />
+          <input id="Password" type="password" name="Password" class="form-control" placeholder="Password"
+            style="width: 75%" /><br />
+          <input type="submit" id="Add" value="Add" class="btn btn-primary" /><br />
+          <p>{{msg}}</p>
+          <!-- <button class="btn btn-primary" onclick="sendData()">Register</button> -->
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
