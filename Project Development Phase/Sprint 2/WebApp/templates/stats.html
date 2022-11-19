@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}"> -->
+    <title>Covid Stats</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Containment Zone Alert System</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/user">Users</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Covid-Stats</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/zones">Containment Zones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header><br><br><br>
+    <footer>
+      <div class="container d-flex flex-wrap text-center justify-content-evenly align-self-center position-relative">
+        <div class="card" style="width: 18rem;"><br>
+          <img src="{{ url_for('static', filename='images/addStats.png')}}" class="card-img-top" alt="addStats" height="270rem">
+          <div class="card-body">
+            <h5 class="card-title">Add Statistics</h5>
+            <p class="card-text">New Containment Zones to be added</p>
+            <a href="/stats/add" class="btn btn-primary">Add</a>
+          </div> 
+        </div>
+        <div class="card" style="width: 18rem;"><br>
+          <img src="{{ url_for('static', filename='images/updateStats.png')}}" class="card-img-top" alt="updateStats" height="270rem">
+          <div class="card-body">
+            <h5 class="card-title">Update Statistics</h5>
+            <p class="card-text">Old Covid-19 stats to be updated</p>
+            <a href="/stats/update" class="btn btn-primary">Update</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;"><br>
+          <img src="{{ url_for('static', filename='images/displayStats.png')}}" class="card-img-top" alt="displayStats" height="270rem">
+          <div class="card-body">
+            <h5 class="card-title">Display Statistics</h5>
+            <p class="card-text">Displaying existing Covid-19 Statistics</p>
+            <a href="/stats/display" class="btn btn-primary">Display</a>
+          </div> 
+        </div>
+        <div class="card" style="width: 18rem;"><br>
+          <img src="{{ url_for('static', filename='images/removeStats.png')}}" class="card-img-top" alt="removeStats" height="270rem">
+          <div class="card-body">
+            <h5 class="card-title">Delete Statistics</h5>
+            <p class="card-text">Old statistics to be deleted</p>
+            <a href="/stats/delete" class="btn btn-primary">Delete</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

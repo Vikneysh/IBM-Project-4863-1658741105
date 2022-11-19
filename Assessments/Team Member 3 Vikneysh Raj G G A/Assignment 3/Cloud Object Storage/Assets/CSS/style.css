@@ -1,0 +1,137 @@
+:root{
+    --width: 100%;
+    --height: 100%;
+    --border-width: 200px;
+    --border-height: 200px;
+  
+  }
+  
+  html,body{
+    background:radial-gradient(mistyrose,pink);
+    height:100%;
+    width:100%;
+    position:relative;
+    overflow:hidden;
+  }
+  
+  .gallery{
+    position:relative;
+    height:100%;
+    width:100%;
+  }
+  
+  .gallery:after{
+    content:'';
+  }
+  
+  .shadow{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    width: 500px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(#805d78,rgba(0,0,0,0) 70%);
+  }
+  
+  img{
+    width:var(--width);
+    height:var(--height);
+  }
+  
+  .clipped-border{
+    -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+     padding:5px;
+     background:linear-gradient(grey,lightgrey);
+     width:var(--border-width);
+     height:var(--border-height);
+     max-height:250px;
+     max-width:250px;
+     height: var(--height);
+     width:var(--width);
+     transition:transform 0.2s;
+     position:absolute;
+     cursor:pointer;
+  }
+  
+  
+  
+  .clipped-border:before{
+    content:'';
+    position:absolute;
+    opacity:0.5;
+    width:350px;
+    height:70px;
+    background:white;
+    top:0;
+    left:0;
+    z-index:1;
+    transform:rotate(45deg);
+    transition:transform 0.5s;
+  }
+  
+  .clipped-border:hover:before{
+    transform: translate(-100px,400%) rotate(45deg);
+    transition:transform 0.5s;
+  }
+  
+  .clipped-border:nth-child(2){
+    top:196px;
+    left:118px;
+  }
+  
+  .clipped-border:nth-child(3){
+    top:0;
+    left:235px;
+  }
+  
+  .clipped-border:nth-child(4){
+    top:196px;
+    left:353px;
+  }
+  
+  .clipped-border:nth-child(5){
+    top:0;
+    left:470px;
+  }
+  
+  #clipped {
+  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  
+  }
+  
+  .clipped-border:hover{
+    transform:scale(1.2);
+    transition:transform 0.2s;
+    z-index:10;
+  }
+  
+  
+  @media screen and (max-width:500px){
+    .clipped-border{
+      width:100px;
+      height:100px;
+    }
+    
+    .clipped-border:nth-child(2){
+      top:0;
+      left:100px;
+    }
+    
+    .clipped-border:nth-child(3){
+      left:200px;
+    }
+    
+    .clipped-border:nth-child(4){
+      top:82px;
+      left:50px;
+    }
+    
+    .clipped-border:nth-child(5){
+      top:82px;
+      left:150px;
+    }
+  }
+  
